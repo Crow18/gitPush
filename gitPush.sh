@@ -7,8 +7,8 @@ if [ -z $1 ]
 then
 	echo "please add arguments to push, pull and commit"
 else
-	read -p "enter Push, Pull or Fetch : " prompt
 	shopt -s nocasematch
+	read -p "enter Push, Pull or Fetch : " prompt
 	if [ "$prompt" == "fetch" ]
 	then
 		git fetch
